@@ -1,0 +1,359 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Portfolio Professional</title>
+
+  <style>
+
+    *{
+      margin:0;
+      padding:0;
+      box-sizing:border-box;
+      font-family: Arial, sans-serif;
+    }
+
+    body{
+      background:#f4f7fb;
+      color:#222;
+      line-height:1.6;
+    }
+
+    header{
+      background:#0f172a;
+      color:white;
+      padding:80px 20px;
+    }
+
+    .container{
+      max-width:1100px;
+      margin:auto;
+    }
+
+    .hero{
+      display:flex;
+      align-items:center;
+      gap:40px;
+      flex-wrap:wrap;
+    }
+
+    .profile{
+      width:180px;
+      height:180px;
+      border-radius:50%;
+      object-fit:cover;
+      border:5px solid #334155;
+    }
+
+    .hero-text h1{
+      font-size:45px;
+      margin-bottom:10px;
+    }
+
+    .hero-text p{
+      font-size:18px;
+      color:#cbd5e1;
+      max-width:600px;
+    }
+
+    .buttons{
+      margin-top:20px;
+    }
+
+    .btn{
+      display:inline-block;
+      padding:12px 22px;
+      border-radius:10px;
+      text-decoration:none;
+      font-weight:bold;
+      margin-right:10px;
+      transition:0.3s;
+    }
+
+    .btn-primary{
+      background:#2563eb;
+      color:white;
+    }
+
+    .btn-primary:hover{
+      background:#1d4ed8;
+    }
+
+    .btn-secondary{
+      background:white;
+      color:#0f172a;
+    }
+
+    nav{
+      background:white;
+      padding:18px;
+      box-shadow:0 2px 10px rgba(0,0,0,0.05);
+      position:sticky;
+      top:0;
+      z-index:100;
+    }
+
+    nav .container{
+      display:flex;
+      justify-content:center;
+      gap:30px;
+    }
+
+    nav a{
+      text-decoration:none;
+      color:#0f172a;
+      font-weight:bold;
+    }
+
+    section{
+      padding:70px 20px;
+    }
+
+    h2{
+      text-align:center;
+      margin-bottom:40px;
+      font-size:32px;
+      color:#0f172a;
+    }
+
+    .card{
+      background:white;
+      padding:30px;
+      border-radius:18px;
+      box-shadow:0 5px 20px rgba(0,0,0,0.05);
+    }
+
+    .skills{
+      display:grid;
+      grid-template-columns:repeat(auto-fit,minmax(180px,1fr));
+      gap:15px;
+    }
+
+    .skill-box{
+      background:#eff6ff;
+      padding:18px;
+      border-radius:12px;
+      text-align:center;
+      font-weight:bold;
+    }
+
+    .project{
+      margin-top:20px;
+      padding:20px;
+      border-left:5px solid #2563eb;
+      background:#f8fafc;
+      border-radius:10px;
+    }
+
+    footer{
+      background:#0f172a;
+      color:white;
+      text-align:center;
+      padding:30px;
+      margin-top:50px;
+    }
+
+    @media(max-width:768px){
+
+      .hero{
+        text-align:center;
+        justify-content:center;
+      }
+
+      .hero-text h1{
+        font-size:35px;
+      }
+
+    }
+
+  </style>
+</head>
+
+<body>
+
+  <header>
+
+    <div class="container hero">
+
+      <img 
+        src="profile.jpg"
+        alt="Profile"
+        class="profile"
+      >
+
+      <div class="hero-text">
+
+        <h1>Azahroh Septiwulandari</h1>
+
+        <p>
+          Fresh Graduate yang tertarik pada bidang
+          desain, teknologi, organisasi, dan pengembangan diri.
+          Memiliki semangat belajar tinggi dan mampu bekerja sama dalam tim.
+        </p>
+
+        <div class="buttons">
+
+          <a 
+            href="cv.pdf"
+            class="btn btn-primary"
+            download
+          >
+            Download CV
+          </a>
+
+          <a 
+            href="#contact"
+            class="btn btn-secondary"
+          >
+            Contact
+          </a>
+
+        </div>
+
+      </div>
+
+    </div>
+
+  </header>
+
+  <nav>
+
+    <div class="container">
+
+      <a href="#about">About</a>
+      <a href="#skills">Skills</a>
+      <a href="#projects">Projects</a>
+      <a href="#contact">Contact</a>
+
+    </div>
+
+  </nav>
+
+  <section id="about">
+
+    <div class="container">
+
+      <h2>About Me</h2>
+
+      <div class="card">
+
+        <p>
+          Saya adalah fresh graduate yang pernah aktif mengikuti
+          kegiatan sekolah dan memiliki ketertarikan dalam dunia kreatif
+          serta teknologi. Saya terbiasa bekerja secara disiplin,
+          bertanggung jawab, dan mampu beradaptasi dengan lingkungan baru. Saya juga mampu berpikir kritis dan senang bekerja dalam tim.
+        </p>
+
+      </div>
+
+    </div>
+
+  </section>
+
+  <section id="skills">
+
+    <div class="container">
+
+      <h2>Skills</h2>
+
+      <div class="card">
+
+        <div class="skills">
+
+          <div class="skill-box">Microsoft Office</div>
+          <div class="skill-box">Canva Design</div>
+          <div class="skill-box">Video & Foto Editing</div>
+          <div class="skill-box">Public Speaking</div>
+          <div class="skill-box">Problem Solving</div>
+          <div class="skill-box">Teamwork</div>
+
+        </div>
+
+      </div>
+
+    </div>
+
+  </section>
+
+  <section id="projects">
+
+    <div class="container">
+
+      <h2>Projects & Experience</h2>
+
+      <div class="card">
+
+        <div class="project">
+
+          <h3>Sekretaris OSIS</h3>
+
+          <p>
+            Mengelola seluruh surat masuk & surat keluar, membuat agenda kegiatan dan membuat laporan pertanggungjawaban.
+          </p>
+
+        </div>
+
+        <div class="project">
+
+          <h3>Bendahara OSIS</h3>
+
+          <p>
+            Mengelola keuangan organisasi dan kas keanggotaan, mencatat setiap transaksi serta membuat rincian dana.
+          </p>
+
+        </div>
+
+        <div class="project">
+
+          <h3>Ketua Pelaksana Kegiatan</h3>
+
+          <p>
+            Menjadi koordinasi kegiatan sekolah, seperti mengatur dan memberi arahan pada saat terlaksananya kegiatan.
+          </p>
+
+        </div>
+
+        <div class="project">
+
+          <h3>MC Acara Sekolah</h3>
+
+          <p>
+            Memandu jalannya acara, Berkolaborasi dengan tim panitia untuk membuat rundown acara, serta mengatasi adanya kendala teknis pada saat acara dimulai.
+          </p>
+
+        </div>
+
+      </div>
+
+    </div>
+
+  </section>
+
+  <section id="contact">
+
+    <div class="container">
+
+      <h2>Contact</h2>
+
+      <div class="card">
+
+        <p>Email : azahrohsepti197@gmail.com</p>
+        <p>Instagram : @dsmurfiie</p>
+
+      </div>
+
+    </div>
+
+  </section>
+
+  <footer>
+
+    <p>
+      © 2026 Azahroh Septiwulandari — Personal Portfolio 
+    </p>
+
+  </footer>
+
+</body>
+</html>
